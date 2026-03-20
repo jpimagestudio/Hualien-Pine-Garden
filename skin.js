@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.11/21010
-// Filename: 
-// Generated 2026-03-20T21:22:40
+// Filename: ??????_????v2.ggsk
+// Generated 2026-03-20T21:42:12
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_thumbnails', 2, false, { ignoreInState: 0  });
@@ -3727,207 +3727,6 @@ function pano2vrSkin(player,base) {
 		}
 		me.__container0.ggUpdatePosition=function (useTransition) {
 		}
-		el=me.__btn_text_m=document.createElement('div');
-		els=me.__btn_text_m__text=document.createElement('div');
-		el.className='ggskin ggskin_textdiv';
-		el.ggTextDiv=els;
-		el.ggId="\u98f2\u98df_btn_text_M";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=false;
-		el.className="ggskin ggskin_text ";
-		el.ggType='text';
-		hs ='';
-		hs+='bottom : 240px;';
-		hs+='color : #000000;';
-		hs+='cursor : pointer;';
-		hs+='height : auto;';
-		hs+='position : absolute;';
-		hs+='right : 20px;';
-		hs+='visibility : hidden;';
-		hs+='width : auto;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style.transformOrigin='50% 50%';
-		hs ='';
-		hs += 'box-sizing: border-box;';
-		hs+='width: auto;';
-		hs+='height: auto;';
-		hs+=cssPrefix + 'background-clip : padding-box;';
-		hs+='background-clip : padding-box;';
-		hs+='background : rgba(0,162,172,0.705882);';
-		hs+='border-color : rgba(33,33,33,0.784314);';
-		hs+='border-radius : 10px;';
-		hs+='border-style : solid;';
-		hs+='border-width : 1px 3px 3px 1px;';
-		hs+='font-size: 16px;';
-		hs+='font-weight: inherit;';
-		hs+='text-align: center;';
-		hs+='white-space: pre;';
-		hs+='padding: 2px;';
-		hs+='overflow: hidden;';
-		els.setAttribute('style',hs);
-		me.__btn_text_m.ggUpdateText=function() {
-			var params = [];
-			var hs = player._("\u5712\u5340\u98f2\u98df", params);
-			if (hs!=this.ggText) {
-				this.ggText=hs;
-				this.ggTextDiv.innerHTML=hs;
-				if (this.ggUpdatePosition) this.ggUpdatePosition();
-			}
-		}
-		me.__btn_text_m.ggUpdateText();
-		el.appendChild(els);
-		me.__btn_text_m.ggIsActive=function() {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return player.getCurrentNode();
-		}
-		me.__btn_text_m.logicBlock_visible = function() {
-			var newLogicStateVisible;
-			if (
-				((player.getVariableValue('vis_button_status') == false)) || 
-				((player.getVariableValue('resp_phone') == false)) || 
-				((player.getVariableValue('var_show_iframe') == true))
-			)
-			{
-				newLogicStateVisible = 0;
-			}
-			else {
-				newLogicStateVisible = -1;
-			}
-			if (me.__btn_text_m.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me.__btn_text_m.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me.__btn_text_m.style.transition='background-color 0s, border-width 0s, color 0s';
-				if (me.__btn_text_m.ggCurrentLogicStateVisible == 0) {
-					me.__btn_text_m.style.visibility="hidden";
-					me.__btn_text_m.ggVisible=false;
-				}
-				else {
-					me.__btn_text_m.style.visibility="hidden";
-					me.__btn_text_m.ggVisible=false;
-				}
-			}
-		}
-		me.__btn_text_m.logicBlock_visible();
-		me.__btn_text_m.logicBlock_backgroundcolor = function() {
-			var newLogicStateBackgroundColor;
-			if (
-				((me.elementMouseOver['_btn_text_m'] == true))
-			)
-			{
-				newLogicStateBackgroundColor = 0;
-			}
-			else if (
-				((me.elementMouseDown['_btn_text_m'] == true))
-			)
-			{
-				newLogicStateBackgroundColor = 1;
-			}
-			else {
-				newLogicStateBackgroundColor = -1;
-			}
-			if (me.__btn_text_m.ggCurrentLogicStateBackgroundColor != newLogicStateBackgroundColor) {
-				me.__btn_text_m.ggCurrentLogicStateBackgroundColor = newLogicStateBackgroundColor;
-				me.__btn_text_m__text.style.transition='background-color 0s, border-width 0s, color 0s';
-				if (me.__btn_text_m.ggCurrentLogicStateBackgroundColor == 0) {
-					me.__btn_text_m__text.style.backgroundColor="rgba(0,199,209,0.784314)";
-				}
-				else if (me.__btn_text_m.ggCurrentLogicStateBackgroundColor == 1) {
-					me.__btn_text_m__text.style.backgroundColor="rgba(0,97,102,0.862745)";
-				}
-				else {
-					me.__btn_text_m__text.style.backgroundColor="rgba(0,162,172,0.705882)";
-				}
-			}
-		}
-		me.__btn_text_m.logicBlock_backgroundcolor();
-		me.__btn_text_m.logicBlock_borderwidth = function() {
-			var newLogicStateBorderWidth;
-			if (
-				((me.elementMouseDown['_btn_text_m'] == true))
-			)
-			{
-				newLogicStateBorderWidth = 0;
-			}
-			else {
-				newLogicStateBorderWidth = -1;
-			}
-			if (me.__btn_text_m.ggCurrentLogicStateBorderWidth != newLogicStateBorderWidth) {
-				me.__btn_text_m.ggCurrentLogicStateBorderWidth = newLogicStateBorderWidth;
-				me.__btn_text_m.style.transition='background-color 0s, border-width 0s, color 0s';
-				if (me.__btn_text_m.ggCurrentLogicStateBorderWidth == 0) {
-					me.__btn_text_m__text.style.borderWidth="3px 1px 0px 3px";
-				}
-				else {
-					me.__btn_text_m__text.style.borderWidth="1px 3px 3px 1px";
-				}
-			}
-		}
-		me.__btn_text_m.logicBlock_borderwidth();
-		me.__btn_text_m.logicBlock_textcolor = function() {
-			var newLogicStateTextColor;
-			if (
-				((me.elementMouseDown['_btn_text_m'] == true))
-			)
-			{
-				newLogicStateTextColor = 0;
-			}
-			else {
-				newLogicStateTextColor = -1;
-			}
-			if (me.__btn_text_m.ggCurrentLogicStateTextColor != newLogicStateTextColor) {
-				me.__btn_text_m.ggCurrentLogicStateTextColor = newLogicStateTextColor;
-				me.__btn_text_m__text.style.transition='background-color 0s, border-width 0s, color 0s';
-				if (me.__btn_text_m.ggCurrentLogicStateTextColor == 0) {
-					me.__btn_text_m.style.color="rgba(255,255,255,1)";
-				}
-				else {
-					me.__btn_text_m.style.color="rgba(0,0,0,1)";
-				}
-			}
-		}
-		me.__btn_text_m.logicBlock_textcolor();
-		me.__btn_text_m.onclick=function (e) {
-			player.setVariableValue('var_menu_open_food', !player.getVariableValue('var_menu_open_food'));
-			player.setVariableValue('vis_screen_tint', true);
-			player.setVariableValue('vis_button_status', false);
-			player.setVariableValue('var_menu_open_view', false);
-			player.setVariableValue('var_menu_open_ent', false);
-		}
-		me.__btn_text_m.onmouseenter=function (e) {
-			me.elementMouseOver['_btn_text_m']=true;
-			me.__btn_text_m.logicBlock_backgroundcolor();
-		}
-		me.__btn_text_m.onmousedown=function (e) {
-			me.elementMouseDown['_btn_text_m']=true;
-			me.__btn_text_m.logicBlock_backgroundcolor();
-			me.__btn_text_m.logicBlock_borderwidth();
-			me.__btn_text_m.logicBlock_textcolor();
-		}
-		me.__btn_text_m.onmouseup=function (e) {
-			me.elementMouseDown['_btn_text_m']=false;
-			me.__btn_text_m.logicBlock_backgroundcolor();
-			me.__btn_text_m.logicBlock_borderwidth();
-			me.__btn_text_m.logicBlock_textcolor();
-		}
-		me.__btn_text_m.onmouseleave=function (e) {
-			me.elementMouseDown['_btn_text_m']=false;
-			me.elementMouseOver['_btn_text_m']=false;
-			me.__btn_text_m.logicBlock_backgroundcolor();
-			me.__btn_text_m.logicBlock_backgroundcolor();
-			me.__btn_text_m.logicBlock_borderwidth();
-			me.__btn_text_m.logicBlock_textcolor();
-		}
-		me.__btn_text_m.ggUpdatePosition=function (useTransition) {
-		}
-		me.__container0.appendChild(me.__btn_text_m);
 		el=me.__btn_icon_m=document.createElement('div');
 		els=me.__btn_icon_m__img=document.createElement('img');
 		els.className='ggskin ggskin__btn_icon_m';
@@ -5359,207 +5158,6 @@ function pano2vrSkin(player,base) {
 		}
 		me.__container.ggUpdatePosition=function (useTransition) {
 		}
-		el=me.__button_mobile=document.createElement('div');
-		els=me.__button_mobile__text=document.createElement('div');
-		el.className='ggskin ggskin_textdiv';
-		el.ggTextDiv=els;
-		el.ggId="\u9031\u908a_Button_Mobile";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=false;
-		el.className="ggskin ggskin_text ";
-		el.ggType='text';
-		hs ='';
-		hs+='bottom : 140px;';
-		hs+='color : #000000;';
-		hs+='cursor : pointer;';
-		hs+='height : auto;';
-		hs+='position : absolute;';
-		hs+='right : 20px;';
-		hs+='visibility : hidden;';
-		hs+='width : auto;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style.transformOrigin='50% 50%';
-		hs ='';
-		hs += 'box-sizing: border-box;';
-		hs+='width: auto;';
-		hs+='height: auto;';
-		hs+=cssPrefix + 'background-clip : padding-box;';
-		hs+='background-clip : padding-box;';
-		hs+='background : rgba(0,162,172,0.705882);';
-		hs+='border-color : rgba(33,33,33,0.784314);';
-		hs+='border-radius : 10px;';
-		hs+='border-style : solid;';
-		hs+='border-width : 1px 3px 3px 1px;';
-		hs+='font-size: 16px;';
-		hs+='font-weight: inherit;';
-		hs+='text-align: center;';
-		hs+='white-space: pre;';
-		hs+='padding: 2px;';
-		hs+='overflow: hidden;';
-		els.setAttribute('style',hs);
-		me.__button_mobile.ggUpdateText=function() {
-			var params = [];
-			var hs = player._("\u5468\u908a\u666f\u9ede", params);
-			if (hs!=this.ggText) {
-				this.ggText=hs;
-				this.ggTextDiv.innerHTML=hs;
-				if (this.ggUpdatePosition) this.ggUpdatePosition();
-			}
-		}
-		me.__button_mobile.ggUpdateText();
-		el.appendChild(els);
-		me.__button_mobile.ggIsActive=function() {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return player.getCurrentNode();
-		}
-		me.__button_mobile.logicBlock_visible = function() {
-			var newLogicStateVisible;
-			if (
-				((player.getVariableValue('resp_phone') == false)) || 
-				((player.getVariableValue('var_show_iframe') == true)) || 
-				((player.getVariableValue('vis_button_status') == false))
-			)
-			{
-				newLogicStateVisible = 0;
-			}
-			else {
-				newLogicStateVisible = -1;
-			}
-			if (me.__button_mobile.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me.__button_mobile.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me.__button_mobile.style.transition='background-color 0s, border-width 0s, color 0s';
-				if (me.__button_mobile.ggCurrentLogicStateVisible == 0) {
-					me.__button_mobile.style.visibility="hidden";
-					me.__button_mobile.ggVisible=false;
-				}
-				else {
-					me.__button_mobile.style.visibility="hidden";
-					me.__button_mobile.ggVisible=false;
-				}
-			}
-		}
-		me.__button_mobile.logicBlock_visible();
-		me.__button_mobile.logicBlock_backgroundcolor = function() {
-			var newLogicStateBackgroundColor;
-			if (
-				((me.elementMouseOver['_button_mobile'] == true))
-			)
-			{
-				newLogicStateBackgroundColor = 0;
-			}
-			else if (
-				((me.elementMouseDown['_button_mobile'] == true))
-			)
-			{
-				newLogicStateBackgroundColor = 1;
-			}
-			else {
-				newLogicStateBackgroundColor = -1;
-			}
-			if (me.__button_mobile.ggCurrentLogicStateBackgroundColor != newLogicStateBackgroundColor) {
-				me.__button_mobile.ggCurrentLogicStateBackgroundColor = newLogicStateBackgroundColor;
-				me.__button_mobile__text.style.transition='background-color 0s, border-width 0s, color 0s';
-				if (me.__button_mobile.ggCurrentLogicStateBackgroundColor == 0) {
-					me.__button_mobile__text.style.backgroundColor="rgba(0,199,209,0.784314)";
-				}
-				else if (me.__button_mobile.ggCurrentLogicStateBackgroundColor == 1) {
-					me.__button_mobile__text.style.backgroundColor="rgba(0,97,102,0.862745)";
-				}
-				else {
-					me.__button_mobile__text.style.backgroundColor="rgba(0,162,172,0.705882)";
-				}
-			}
-		}
-		me.__button_mobile.logicBlock_backgroundcolor();
-		me.__button_mobile.logicBlock_borderwidth = function() {
-			var newLogicStateBorderWidth;
-			if (
-				((me.elementMouseDown['_button_mobile'] == true))
-			)
-			{
-				newLogicStateBorderWidth = 0;
-			}
-			else {
-				newLogicStateBorderWidth = -1;
-			}
-			if (me.__button_mobile.ggCurrentLogicStateBorderWidth != newLogicStateBorderWidth) {
-				me.__button_mobile.ggCurrentLogicStateBorderWidth = newLogicStateBorderWidth;
-				me.__button_mobile.style.transition='background-color 0s, border-width 0s, color 0s';
-				if (me.__button_mobile.ggCurrentLogicStateBorderWidth == 0) {
-					me.__button_mobile__text.style.borderWidth="3px 1px 0px 3px";
-				}
-				else {
-					me.__button_mobile__text.style.borderWidth="1px 3px 3px 1px";
-				}
-			}
-		}
-		me.__button_mobile.logicBlock_borderwidth();
-		me.__button_mobile.logicBlock_textcolor = function() {
-			var newLogicStateTextColor;
-			if (
-				((me.elementMouseDown['_button_mobile'] == true))
-			)
-			{
-				newLogicStateTextColor = 0;
-			}
-			else {
-				newLogicStateTextColor = -1;
-			}
-			if (me.__button_mobile.ggCurrentLogicStateTextColor != newLogicStateTextColor) {
-				me.__button_mobile.ggCurrentLogicStateTextColor = newLogicStateTextColor;
-				me.__button_mobile__text.style.transition='background-color 0s, border-width 0s, color 0s';
-				if (me.__button_mobile.ggCurrentLogicStateTextColor == 0) {
-					me.__button_mobile.style.color="rgba(255,255,255,1)";
-				}
-				else {
-					me.__button_mobile.style.color="rgba(0,0,0,1)";
-				}
-			}
-		}
-		me.__button_mobile.logicBlock_textcolor();
-		me.__button_mobile.onclick=function (e) {
-			player.setVariableValue('var_menu_open_view', !player.getVariableValue('var_menu_open_view'));
-			player.setVariableValue('vis_screen_tint', true);
-			player.setVariableValue('vis_button_status', false);
-			player.setVariableValue('var_menu_open_ent', false);
-			player.setVariableValue('var_menu_open_food', false);
-		}
-		me.__button_mobile.onmouseenter=function (e) {
-			me.elementMouseOver['_button_mobile']=true;
-			me.__button_mobile.logicBlock_backgroundcolor();
-		}
-		me.__button_mobile.onmousedown=function (e) {
-			me.elementMouseDown['_button_mobile']=true;
-			me.__button_mobile.logicBlock_backgroundcolor();
-			me.__button_mobile.logicBlock_borderwidth();
-			me.__button_mobile.logicBlock_textcolor();
-		}
-		me.__button_mobile.onmouseup=function (e) {
-			me.elementMouseDown['_button_mobile']=false;
-			me.__button_mobile.logicBlock_backgroundcolor();
-			me.__button_mobile.logicBlock_borderwidth();
-			me.__button_mobile.logicBlock_textcolor();
-		}
-		me.__button_mobile.onmouseleave=function (e) {
-			me.elementMouseDown['_button_mobile']=false;
-			me.elementMouseOver['_button_mobile']=false;
-			me.__button_mobile.logicBlock_backgroundcolor();
-			me.__button_mobile.logicBlock_backgroundcolor();
-			me.__button_mobile.logicBlock_borderwidth();
-			me.__button_mobile.logicBlock_textcolor();
-		}
-		me.__button_mobile.ggUpdatePosition=function (useTransition) {
-		}
-		me.__container.appendChild(me.__button_mobile);
 		el=me._landmark=document.createElement('div');
 		els=me._landmark__img=document.createElement('img');
 		els.className='ggskin ggskin_landmark';
@@ -15891,11 +15489,6 @@ function pano2vrSkin(player,base) {
 		me.__btn_d2.logicBlock_borderwidth();
 		me.elementMouseOver['_btn_d2']=false;
 		me.__btn_text_d1.logicBlock_textcolor();
-		me.__btn_text_m.logicBlock_visible();
-		me.__btn_text_m.logicBlock_backgroundcolor();
-		me.__btn_text_m.logicBlock_borderwidth();
-		me.__btn_text_m.logicBlock_textcolor();
-		me.elementMouseOver['_btn_text_m']=false;
 		me.__btn_icon_m.logicBlock_visible();
 		me._cloner.logicBlock_visible();
 		me.__shared_container0.logicBlock_size();
@@ -15906,11 +15499,6 @@ function pano2vrSkin(player,base) {
 		me.__btn_d1.logicBlock_backgroundcolor();
 		me.__btn_d1.logicBlock_borderwidth();
 		me.__btn_text_d0.logicBlock_textcolor();
-		me.__button_mobile.logicBlock_visible();
-		me.__button_mobile.logicBlock_backgroundcolor();
-		me.__button_mobile.logicBlock_borderwidth();
-		me.__button_mobile.logicBlock_textcolor();
-		me.elementMouseOver['_button_mobile']=false;
 		me._landmark.logicBlock_visible();
 		me.__cloner.logicBlock_visible();
 		me.__shared_container.logicBlock_size();
@@ -17024,14 +16612,12 @@ function pano2vrSkin(player,base) {
 			me._cloner_menu.ggUpdateConditionNodeChange();
 			me.__shared_container1.logicBlock_visible();
 			me.__btn_container1.logicBlock_visible();
-			me.__btn_text_m.logicBlock_visible();
 			me.__btn_icon_m.logicBlock_visible();
 			me._cloner.logicBlock_visible();
 			me.__cloner_menu0.ggUpdateConditionNodeChange();
 			me.__shared_container0.logicBlock_visible();
 			me.__btn_container0.logicBlock_visible();
 			me.__btn_d1.logicBlock_backgroundcolor();
-			me.__button_mobile.logicBlock_visible();
 			me._landmark.logicBlock_visible();
 			me.__cloner.logicBlock_visible();
 			me.__cloner_menu.ggUpdateConditionNodeChange();
@@ -17234,7 +16820,6 @@ function pano2vrSkin(player,base) {
 			me.__shared_container1.logicBlock_size();
 			me.__shared_container1.logicBlock_visible();
 			me.__btn_container1.logicBlock_visible();
-			me.__btn_text_m.logicBlock_visible();
 			me.__btn_icon_m.logicBlock_visible();
 			me._cloner.logicBlock_visible();
 			me.__scrollarea0.ggUpdatePosition();
@@ -17242,7 +16827,6 @@ function pano2vrSkin(player,base) {
 			me.__shared_container0.logicBlock_visible();
 			me.__btn_container0.logicBlock_visible();
 			me.__btn_d1.logicBlock_backgroundcolor();
-			me.__button_mobile.logicBlock_visible();
 			me._landmark.logicBlock_visible();
 			me.__cloner.logicBlock_visible();
 			me.__scrollarea.ggUpdatePosition();
@@ -17443,10 +17027,8 @@ function pano2vrSkin(player,base) {
 			me.__btn_d3.logicBlock_visible();
 			me._shop.logicBlock_visible();
 			me.__btn_container1.logicBlock_visible();
-			me.__btn_text_m.logicBlock_visible();
 			me.__btn_icon_m.logicBlock_visible();
 			me.__btn_container0.logicBlock_visible();
-			me.__button_mobile.logicBlock_visible();
 			me._landmark.logicBlock_visible();
 			me.__btn_container.logicBlock_visible();
 			me.__btn_d.logicBlock_visible();
@@ -17485,10 +17067,8 @@ function pano2vrSkin(player,base) {
 		player.addListener('varchanged_var_show_iframe', function(event) {
 			me._shop.logicBlock_visible();
 			me.__shared_container1.logicBlock_visible();
-			me.__btn_text_m.logicBlock_visible();
 			me.__btn_icon_m.logicBlock_visible();
 			me.__shared_container0.logicBlock_visible();
-			me.__button_mobile.logicBlock_visible();
 			me._landmark.logicBlock_visible();
 			me.__shared_container.logicBlock_visible();
 			me._html_shared_container.logicBlock_visible();
@@ -17500,9 +17080,7 @@ function pano2vrSkin(player,base) {
 				}
 			}
 			me._shop.logicBlock_visible();
-			me.__btn_text_m.logicBlock_visible();
 			me.__btn_icon_m.logicBlock_visible();
-			me.__button_mobile.logicBlock_visible();
 			me._landmark.logicBlock_visible();
 			me._node_info_button_m.logicBlock_visible();
 		});
@@ -17838,7 +17416,7 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='border : 0px solid #000000;';
 		hs+='color : rgba(255,255,255,1);';
-		hs+='height : 100%;';
+		hs+='height : 85%;';
 		hs+='left : 0px;';
 		hs+='position : absolute;';
 		hs+='top : 0px;';
