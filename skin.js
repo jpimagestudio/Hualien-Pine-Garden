@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.11/21010
 // Filename: ??????_????v2.ggsk
-// Generated 2026-03-20T21:42:12
+// Generated 2026-03-20T21:48:35
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_thumbnails', 2, false, { ignoreInState: 0  });
@@ -3727,10 +3727,10 @@ function pano2vrSkin(player,base) {
 		}
 		me.__container0.ggUpdatePosition=function (useTransition) {
 		}
-		el=me.__btn_icon_m=document.createElement('div');
-		els=me.__btn_icon_m__img=document.createElement('img');
-		els.className='ggskin ggskin__btn_icon_m';
-		hs=basePath + 'images/_btn_icon_m.png';
+		el=me._dining=document.createElement('div');
+		els=me._dining__img=document.createElement('img');
+		els.className='ggskin ggskin_dining';
+		hs=basePath + 'images/dining.png';
 		els.setAttribute('src',hs);
 		els.ggNormalSrc=hs;
 		hs ='';
@@ -3741,7 +3741,7 @@ function pano2vrSkin(player,base) {
 		player.checkLoaded.push(els);
 		el.appendChild(els);
 		el.ggSubElement = els;
-		el.ggId="\u98f2\u98df_btn_icon_M";
+		el.ggId="Dining";
 		el.ggDy=-60;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
@@ -3758,7 +3758,7 @@ function pano2vrSkin(player,base) {
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
-		me.__btn_icon_m.ggIsActive=function() {
+		me._dining.ggIsActive=function() {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
 				return this.parentNode.ggIsActive();
 			}
@@ -3770,7 +3770,7 @@ function pano2vrSkin(player,base) {
 			}
 			return player.getCurrentNode();
 		}
-		me.__btn_icon_m.logicBlock_visible = function() {
+		me._dining.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
 				((player.getVariableValue('resp_phone') == false)) || 
@@ -3783,30 +3783,30 @@ function pano2vrSkin(player,base) {
 			else {
 				newLogicStateVisible = -1;
 			}
-			if (me.__btn_icon_m.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me.__btn_icon_m.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me.__btn_icon_m.style.transition='';
-				if (me.__btn_icon_m.ggCurrentLogicStateVisible == 0) {
-					me.__btn_icon_m.style.visibility="hidden";
-					me.__btn_icon_m.ggVisible=false;
+			if (me._dining.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._dining.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._dining.style.transition='';
+				if (me._dining.ggCurrentLogicStateVisible == 0) {
+					me._dining.style.visibility="hidden";
+					me._dining.ggVisible=false;
 				}
 				else {
-					me.__btn_icon_m.style.visibility=(Number(me.__btn_icon_m.style.opacity)>0||!me.__btn_icon_m.style.opacity)?'inherit':'hidden';
-					me.__btn_icon_m.ggVisible=true;
+					me._dining.style.visibility=(Number(me._dining.style.opacity)>0||!me._dining.style.opacity)?'inherit':'hidden';
+					me._dining.ggVisible=true;
 				}
 			}
 		}
-		me.__btn_icon_m.logicBlock_visible();
-		me.__btn_icon_m.onclick=function (e) {
+		me._dining.logicBlock_visible();
+		me._dining.onclick=function (e) {
 			player.setVariableValue('var_menu_open_food', !player.getVariableValue('var_menu_open_food'));
 			player.setVariableValue('vis_button_status', false);
 			player.setVariableValue('var_menu_open_view', false);
 			player.setVariableValue('var_menu_open_ent', false);
 			player.setVariableValue('vis_language_M', !player.getVariableValue('vis_language_M'));
 		}
-		me.__btn_icon_m.ggUpdatePosition=function (useTransition) {
+		me._dining.ggUpdatePosition=function (useTransition) {
 		}
-		me.__container0.appendChild(me.__btn_icon_m);
+		me.__container0.appendChild(me._dining);
 		el=me._cloner=document.createElement('div');
 		el.ggId="\u98f2\u98dfcloner";
 		el.ggDx=0;
@@ -15489,7 +15489,7 @@ function pano2vrSkin(player,base) {
 		me.__btn_d2.logicBlock_borderwidth();
 		me.elementMouseOver['_btn_d2']=false;
 		me.__btn_text_d1.logicBlock_textcolor();
-		me.__btn_icon_m.logicBlock_visible();
+		me._dining.logicBlock_visible();
 		me._cloner.logicBlock_visible();
 		me.__shared_container0.logicBlock_size();
 		me.__shared_container0.logicBlock_visible();
@@ -16612,7 +16612,7 @@ function pano2vrSkin(player,base) {
 			me._cloner_menu.ggUpdateConditionNodeChange();
 			me.__shared_container1.logicBlock_visible();
 			me.__btn_container1.logicBlock_visible();
-			me.__btn_icon_m.logicBlock_visible();
+			me._dining.logicBlock_visible();
 			me._cloner.logicBlock_visible();
 			me.__cloner_menu0.ggUpdateConditionNodeChange();
 			me.__shared_container0.logicBlock_visible();
@@ -16820,7 +16820,7 @@ function pano2vrSkin(player,base) {
 			me.__shared_container1.logicBlock_size();
 			me.__shared_container1.logicBlock_visible();
 			me.__btn_container1.logicBlock_visible();
-			me.__btn_icon_m.logicBlock_visible();
+			me._dining.logicBlock_visible();
 			me._cloner.logicBlock_visible();
 			me.__scrollarea0.ggUpdatePosition();
 			me.__shared_container0.logicBlock_size();
@@ -17027,7 +17027,7 @@ function pano2vrSkin(player,base) {
 			me.__btn_d3.logicBlock_visible();
 			me._shop.logicBlock_visible();
 			me.__btn_container1.logicBlock_visible();
-			me.__btn_icon_m.logicBlock_visible();
+			me._dining.logicBlock_visible();
 			me.__btn_container0.logicBlock_visible();
 			me._landmark.logicBlock_visible();
 			me.__btn_container.logicBlock_visible();
@@ -17067,7 +17067,7 @@ function pano2vrSkin(player,base) {
 		player.addListener('varchanged_var_show_iframe', function(event) {
 			me._shop.logicBlock_visible();
 			me.__shared_container1.logicBlock_visible();
-			me.__btn_icon_m.logicBlock_visible();
+			me._dining.logicBlock_visible();
 			me.__shared_container0.logicBlock_visible();
 			me._landmark.logicBlock_visible();
 			me.__shared_container.logicBlock_visible();
@@ -17080,7 +17080,7 @@ function pano2vrSkin(player,base) {
 				}
 			}
 			me._shop.logicBlock_visible();
-			me.__btn_icon_m.logicBlock_visible();
+			me._dining.logicBlock_visible();
 			me._landmark.logicBlock_visible();
 			me._node_info_button_m.logicBlock_visible();
 		});
