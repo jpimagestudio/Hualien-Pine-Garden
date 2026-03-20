@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>松園別館：地下掩體時空敘事</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pine-green: #2d4635;
+      --wood-brown: #8d775f;
+      --soft-white: #fdfcf8;
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      margin: 0;
+      padding: 10px;
+      font-family: 'Noto Sans TC', sans-serif;
+      color: #ccc;
+    }
+
+    /* 核心容器：抗擠壓響應式設計 */
+    .info-box-container, .postcard-container {
+      width: 95%;
+      max-width: 850px;
+      margin: 10px auto;
+      background: #262626;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .header-box {
+      border-left: 5px solid var(--accent-gold);
+      padding-left: 20px;
+      margin: 40px 0;
+    }
+
+    h1 {
+      font-family: 'Noto Serif TC', serif;
+      color: var(--soft-white);
+      font-size: 2.2rem;
+      margin: 0 0 15px 0;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content-section { padding: var(--spacing-lg); }
+    
+    .description { line-height: 2; text-align: justify; margin-bottom: 35px; color: #bbb; font-size: 1.05rem; }
+
+    /* 卡片式排版 */
+    .archive-card {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 40px;
+    }
+
+    .archive-card:last-child { border-bottom: none; }
+
+    .card-label {
+      font-size: 0.8rem; color: var(--accent-gold);
+      letter-spacing: 3px; margin-bottom: 15px; display: block;
+    }
+
+    .card-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.6rem; color: var(--soft-white); margin-bottom: 20px;
+    }
+
+    /* 響應式調整：徹底解決手機版左右擠壓 */
+    @media (max-width: 768px) {
+      :root { --spacing-lg: 25px; }
+    }
+
+    @media (max-width: 600px) {
+      .header-box { margin: 25px 0; }
+      .hero-section { height: 220px; }
+      .content-section { padding: 25px 15px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="content-section" style="padding-bottom: 0;">
+    <div class="header-box">
+      <h1>時空掩體：地下避難所紀實</h1>
+      <p style="margin-top:15px; line-height: 1.8; color: #bbb;">
+        這座地下防空洞興建於 <strong>1942至1943年</strong>，是松園別館歷史中最幽暗、也最沉重的戰時見證。
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6761.jpeg" class="hero-image" alt="掩體入口">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">第一步</span>
+    <div class="card-title">掩體入口處</div>
+    <div class="description">
+      厚實的洗石子階梯向下延伸。這裡是當時軍方高層在面臨美軍劇烈轟炸時，最核心的避難與指揮空間。
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_1465.jpeg" class="hero-image" alt="觀測隧道">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">第二步</span>
+    <div class="card-title">觀測隧道內部</div>
+    <div class="description">
+      內部保留了斑駁磚牆與厚達 <strong>四公分</strong> 的防爆鐵門遺蹟。空氣中凝聚著沉重的戰時氛圍。
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6773.jpeg" class="hero-image" alt="神風特攻隊紀錄">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">第三步</span>
+    <div class="card-title">台灣神風紀實：白蝴蝶的悲壯告別</div>
+    <div class="description">
+      在太平洋戰爭末期的台灣，特攻隊員被稱為「白蝴蝶」。這段紀實錄始於 <strong>1944</strong> 年 <strong>1</strong> 月 <strong>15</strong> 日，持續到 <strong>1945</strong> 年 <strong>6</strong> 月 <strong>7</strong> 日，全台出動高達 <strong>3461</strong> 架次。
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6768.jpeg" class="hero-image" alt="看板">
+  </div>
+  <div class="content-section">
+    <span class="card-label">第四步</span>
+    <div class="card-title">神風特攻隊的誕生</div>
+    <div class="description">
+      西元 <strong>1944</strong> 年，日本於中途島戰役失利後，大西瀧治郎中將提出了「一機換一艦」的瘋狂構想。
+    </div>
+    
+     <span class="quality-badge">
+        🔍 虛擬導覽內容由爵攝數位影像工作室製作
+      </span>
+  </div>
+</div>
+
+</body>
+</html>
