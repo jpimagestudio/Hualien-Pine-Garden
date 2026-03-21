@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쏭위엔 카페: 역사와 미각의 교차</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pine-green: #2d4635;
+      --wood-brown: #8d775f;
+      --soft-white: #fdfcf8;
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body { background-color: #f4f1ea; margin: 0; padding: 10px; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; }
+    
+    .info-box-container, .postcard-container {
+      width: 95%;
+      max-width: 850px;
+      margin: 10px auto;
+      background: var(--soft-white);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+
+    .hero-section {
+      position: relative;
+      height: 380px;
+      overflow: hidden;
+    }
+
+    .hero-image { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+
+    .arch-icon {
+      position: absolute; top: 20px; right: 20px;
+      background: var(--soft-white); padding: 10px; border-radius: 50%;
+      width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .content-section { padding: var(--spacing-lg); }
+    
+    h1 { font-family: 'Noto Serif KR', serif; color: var(--pine-green); font-size: 2.5rem; margin: 0 0 10px 0; }
+    
+    .description { line-height: 2; text-align: justify; margin-bottom: 30px; color: #444; font-size: 1.05rem; }
+    
+    .info-box {
+      background: #f9f7f2; padding: 20px; border-radius: 8px;
+      border-left: 4px solid var(--accent-gold); margin-bottom: 30px;
+      font-size: 0.95rem; line-height: 1.8;
+    }
+
+    .benefit-tag {
+      display: inline-block; padding: 4px 12px; background: var(--pine-green);
+      color: #fff; border-radius: 50px; font-size: 0.8rem; margin-right: 8px; margin-bottom: 8px;
+    }
+
+    .map-header {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 15px;
+      color: var(--wood-brown); font-weight: 700; border-top: 1px solid #eee; padding-top: 25px;
+    }
+
+    .map-section { height: 280px; border-radius: 10px; overflow: hidden; border: 1px solid #ddd; }
+
+    /* --- 多層次響應式優化 --- */
+    @media (max-width: 768px) {
+      :root { --spacing-lg: 25px; }
+    }
+
+    @media (max-width: 600px) {
+      .hero-section { height: 250px; }
+      h1 { font-size: 1.8rem; }
+      .description { font-size: 1rem; line-height: 1.8; }
+      .map-section { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="hero-section">
+    <img src="IMG_6825.jpeg" class="hero-image" alt="쏭위엔 카페 특선 음료">
+    <div class="arch-icon">
+      <svg width="35" height="35" viewBox="0 0 24 24" fill="var(--pine-green)">
+        <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4v-2z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h1>쏭위엔 카페</h1>
+    
+    <div class="description">
+      <strong>쏭위엔 카페</strong>는 원래 복도식 건물로 쇼와 <strong>17</strong>년에서 <strong>18</strong>년 사이에 지어졌으며, 과거 일본군 잡역병들의 숙소로 사용되었습니다.<br><br>
+      현재는 <strong>쏭위엔 허브 다이닝</strong>으로 탈바꿈하여 역사적 유적과 현대적 감각을 결합했습니다. 다양한 허브를 식사와 음료에 활용하며, 독특한 신선한 솔잎 주스와 솔잎 커피를 선보입니다. 이러한 경험을 통해 여행객들은 시각적으로 송원별관의 백 년 된 아름다움을 감상할 뿐만 아니라, 미각을 통해서도 이 독특하고 여유로운 시간을 깊이 있게 즐길 수 있습니다.
+    </div>
+
+    <div class="info-box">
+      <span class="benefit-tag">숲의 비타민</span>
+      <span class="benefit-tag">오엽송 한정</span><br>
+      🕒 영업시간: 매일 <strong>09:00 - 18:00</strong><br>
+      📞 연락처: <a href="tel:038356510" style="color:var(--wood-brown); text-decoration:none; font-weight:bold;">03-8356510</a>
+    </div>
+
+    <span class="quality-badge" style="display: block; margin-top: 25px; font-size: 0.8rem; color: #999; text-align: center;">
+        🔍 가상 가이드 콘텐츠 제작: 줴서 디지털 이미지 스튜디오
+    </span>
+  </div>
+</div>
+
+</body>
+</html>

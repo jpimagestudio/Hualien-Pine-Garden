@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taiwan Gift Shop (Slow Living) - Pine Garden | JP Image Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;700&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* 核心樣式與變數 */
+    :root {
+      --pine-green: #2d4635; 
+      --wood-brown: #8d775f; 
+      --soft-white: #fdfcf8; 
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #f4f1ea;
+      margin: 0;
+      padding: 20px 10px;
+      font-family: 'Noto Sans', sans-serif;
+      color: #333;
+    }
+
+    /* 時空明信片容器 */
+    .postcard-container {
+      width: 95%; 
+      max-width: 850px; 
+      margin: 10px auto; 
+      background: var(--soft-white);
+      border-radius: 12px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+      overflow: hidden;
+    }
+
+    /* 頂部主視覺 */
+    .hero-section {
+      width: 100%;
+      height: 450px;
+      background-image: url('松園別館-慢慢生活館-2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 內容區塊 */
+    .content-section { 
+      padding: var(--spacing-lg); 
+    }
+
+    /* 標題與分隔線 */
+    h1 {
+      font-family: 'Noto Serif', serif;
+      font-size: 2.2rem;
+      color: var(--pine-green);
+      margin: 0 0 15px 0;
+      letter-spacing: 0.05em;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: var(--accent-gold);
+      margin: 0 0 30px 0;
+    }
+
+    /* 雜誌排版：文繞圖設定 */
+    .magazine-article {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #4a4a4a;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+
+    .magazine-article::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .wrap-img-right {
+      float: right;
+      width: 45%;
+      max-width: 340px;
+      margin: 5px 0 20px 25px;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .wrap-img-left {
+      float: left;
+      width: 50%;
+      max-width: 360px;
+      margin: 15px 25px 20px 0;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    /* 景點資訊框樣式 (攝影札記) */
+    .jp-studio-info { 
+      background: #f9f7f2; 
+      padding: 20px 25px; 
+      border-radius: 8px; 
+      border-left: 4px solid var(--accent-gold); 
+      margin-bottom: 30px; 
+      font-size: 0.95rem; 
+      line-height: 1.8; 
+      color: #555;
+      clear: both;
+    }
+
+    .jp-studio-info strong {
+      color: var(--wood-brown);
+      font-family: 'Noto Serif', serif;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    /* 地圖容器 */
+    .map-box-container {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #e0e0e0;
+    }
+
+    /* 多層次響應式 */
+    @media (max-width: 768px) {
+      :root {
+        --spacing-lg: 25px;
+      }
+      h1 { font-size: 1.8rem; }
+      
+      .wrap-img-right, .wrap-img-left {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-section { 
+        height: 220px; 
+      }
+      .content-section { 
+        padding: 15px; 
+      }
+      .wrap-img-right, .wrap-img-left {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="hero-section"></div>
+
+  <div class="content-section">
+    <h1>The Faint Cultural Light Spreading Through the Greenery</h1>
+    <div class="divider"></div>
+    
+    <div class="magazine-article">
+      <img src="松園別館-慢慢生活館-4.jpg" alt="Taiwanese Lifestyle Creative Products" class="wrap-img-right">
+      <p>The Slow Living Pavilion is a creative and sales platform specially built for local artists in Hualien. We are dedicated to supporting the cross-disciplinary integration of local artisans, designers, and cultural and creative practitioners. Here, you can see the artistic crystallization of diverse fields, from weaving and handcrafts to woodworking and metalwork. Every piece carries the warmth of Hualien's land and the persistence of its craftsmen.</p>
+      
+      <p>In the colorful display area, the miniature magnets and various small items of "Taiwanese Lifestyle" immediately catch the eye. Those designs that condense Taiwanese street scenes, retro shop signs, and daily memories into a tiny square, gently illuminated by spotlights, resemble a miniature exhibition of time.</p>
+
+      <img src="慢慢生活館-8.JPEG" alt="Indigenous Clothing Magnets and Wooden Ornaments" class="wrap-img-left">
+      <p>Delving into a corner of the space, playful magnets featuring traditional indigenous clothing are hung. Their vibrant totems and delicate colors silently echo the unique multicultural pulse of Eastern Taiwan. Alongside them, warm wooden blessing ornaments and Daruma-shaped keychains transform profound cultural heritage into light, everyday companionship. In this thoughtfully curated space, every object seems to softly remind travelers to slow down and savor the traces of passing time.</p>
+    </div>
+
+    <div class="jp-studio-info">
+      <strong>Photography Notes</strong><br>
+      This set of images was captured by the JP Image Studio team from the perspective of local observers. All images have been processed to 4K high-definition standards, preserving the true layers of wood textures and glaze colors. The architecture of Pine Garden has witnessed the changing of eras, and this gift space, which blends local elements with contemporary design, injects fresh living aesthetics into a site with heavy history.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

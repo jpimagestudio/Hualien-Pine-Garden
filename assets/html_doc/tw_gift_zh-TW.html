@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣禮品館 - 松園別館｜JP Image Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* 核心樣式與變數 */
+    :root {
+      --pine-green: #2d4635; 
+      --wood-brown: #8d775f; 
+      --soft-white: #fdfcf8; 
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #f4f1ea;
+      margin: 0;
+      padding: 20px 10px;
+      font-family: 'Noto Sans TC', sans-serif;
+      color: #333;
+    }
+
+    /* 時空明信片容器 */
+    .postcard-container {
+      width: 95%; 
+      max-width: 850px; 
+      margin: 10px auto; 
+      background: var(--soft-white);
+      border-radius: 12px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+      overflow: hidden;
+    }
+
+    /* 頂部主視覺 (改用台灣禮品店-2.jpg) */
+    .hero-section {
+      width: 100%;
+      height: 450px;
+      background-image: url('松園別館-台灣禮品店-2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 內容區塊 */
+    .content-section { 
+      padding: var(--spacing-lg); 
+    }
+
+    /* 標題與分隔線 */
+    h1 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 2.2rem;
+      color: var(--pine-green);
+      margin: 0 0 15px 0;
+      letter-spacing: 0.05em;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: var(--accent-gold);
+      margin: 0 0 30px 0;
+    }
+
+    /* 雜誌排版：文繞圖設定 */
+    .magazine-article {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #4a4a4a;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+
+    /* 清除浮動 */
+    .magazine-article::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .wrap-img-right {
+      float: right;
+      width: 45%;
+      max-width: 320px;
+      margin: 5px 0 20px 25px;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .wrap-img-left {
+      float: left;
+      width: 55%;
+      max-width: 380px;
+      margin: 15px 25px 20px 0;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    /* 景點資訊框樣式 (攝影札記) */
+    .jp-studio-info { 
+      background: #f9f7f2; 
+      padding: 20px 25px; 
+      border-radius: 8px; 
+      border-left: 4px solid var(--accent-gold); 
+      margin-bottom: 30px; 
+      font-size: 0.95rem; 
+      line-height: 1.8; 
+      color: #555;
+      clear: both; /* 確保不受上方浮動圖片影響 */
+    }
+
+    .jp-studio-info strong {
+      color: var(--wood-brown);
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    /* 地圖容器 */
+    .map-box-container {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #e0e0e0;
+    }
+
+    /* 多層次響應式 */
+    @media (max-width: 768px) {
+      :root {
+        --spacing-lg: 25px;
+      }
+      h1 { font-size: 1.8rem; }
+      
+      /* 在平板尺寸微調圖片比例 */
+      .wrap-img-right, .wrap-img-left {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-section { 
+        height: 220px; 
+      }
+      .content-section { 
+        padding: 15px; 
+      }
+      /* 手機版取消文繞圖，改為單欄滿版排列 */
+      .wrap-img-right, .wrap-img-left {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="hero-section"></div>
+
+  <div class="content-section">
+    <h1>靜謐流轉的職人時光</h1>
+    <div class="divider"></div>
+    
+    <div class="magazine-article">
+      <img src="松園別館-台灣禮品店-1.jpg" alt="松園別館木門" class="wrap-img-right">
+      <p>踏入敞亮的展廳，網格狀的磨石子地磚承載著光陰的重量。視線順著軌道燈的暖黃光暈延伸，純白色的陳列架上，一件件在地工藝品靜靜吐露著職人的心血。那尊立於前方的彩釉葫蘆瓶，在光線的折射下，泛著溫潤而飽滿的歲月光澤。</p>
+      
+      <p>回望空間的邊際，半掩的老舊木門外，是午後斜陽與攀藤交織出的光影斑駁。紅紙春聯上瀟灑的墨跡，與門楣上的英文字樣，在微風中形成一種跨越世代的微妙對話，將戶外的自然氣息輕柔地引渡至室內。</p>
+
+      <img src="松園別館-台灣禮品店-6.JPEG" alt="台灣禮品館工藝品" class="wrap-img-left">
+      <p>走近細看，每一處細節都藏著屬於這片土地的敘事。白瓷葉盤上的青花鳥雀與小鹿靈動欲出，彷彿將山林間的呼吸烙印於釉面之上；手工燒製的琉璃珠串，則將鮮豔的色彩凝結於剔透之中。那些文字錯落的馬克杯排排站立，無聲地訴說著在地文化的故事。這些物件不只是靜態的器皿，更是在歷史建築的包裹下，沉澱出獨特美學的具象化呈現。</p>
+    </div>
+
+    <div class="jp-studio-info">
+      <strong>攝影札記</strong><br>
+      本組影像由 JP Image Studio 團隊以觀察者視角捕捉，並全數經由 4K 高畫質標準處理，力求還原現場最真實的溫潤光影與細節層次。松園別館的歷史底蘊與在地工藝品的交織，不僅是空間機能的轉換，更是花蓮在地歷史與當代美學對話的深刻見證 。
+    </div>
+
+
+  </div>
+</div>
+
+
+</body>
+</html>

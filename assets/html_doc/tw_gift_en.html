@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taiwan Gift Shop - Pine Garden | JP Image Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;700&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* 核心樣式與變數 */
+    :root {
+      --pine-green: #2d4635; 
+      --wood-brown: #8d775f; 
+      --soft-white: #fdfcf8; 
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #f4f1ea;
+      margin: 0;
+      padding: 20px 10px;
+      font-family: 'Noto Sans', sans-serif;
+      color: #333;
+    }
+
+    /* 時空明信片容器 */
+    .postcard-container {
+      width: 95%; 
+      max-width: 850px; 
+      margin: 10px auto; 
+      background: var(--soft-white);
+      border-radius: 12px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+      overflow: hidden;
+    }
+
+    /* 頂部主視覺 (改用台灣禮品店-2.jpg) */
+    .hero-section {
+      width: 100%;
+      height: 450px;
+      background-image: url('松園別館-台灣禮品店-2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 內容區塊 */
+    .content-section { 
+      padding: var(--spacing-lg); 
+    }
+
+    /* 標題與分隔線 */
+    h1 {
+      font-family: 'Noto Serif', serif;
+      font-size: 2.2rem;
+      color: var(--pine-green);
+      margin: 0 0 15px 0;
+      letter-spacing: 0.05em;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: var(--accent-gold);
+      margin: 0 0 30px 0;
+    }
+
+    /* 雜誌排版：文繞圖設定 */
+    .magazine-article {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #4a4a4a;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+
+    /* 清除浮動 */
+    .magazine-article::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .wrap-img-right {
+      float: right;
+      width: 45%;
+      max-width: 320px;
+      margin: 5px 0 20px 25px;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .wrap-img-left {
+      float: left;
+      width: 55%;
+      max-width: 380px;
+      margin: 15px 25px 20px 0;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    /* 景點資訊框樣式 (攝影札記) */
+    .jp-studio-info { 
+      background: #f9f7f2; 
+      padding: 20px 25px; 
+      border-radius: 8px; 
+      border-left: 4px solid var(--accent-gold); 
+      margin-bottom: 30px; 
+      font-size: 0.95rem; 
+      line-height: 1.8; 
+      color: #555;
+      clear: both; /* 確保不受上方浮動圖片影響 */
+    }
+
+    .jp-studio-info strong {
+      color: var(--wood-brown);
+      font-family: 'Noto Serif', serif;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    /* 地圖容器 */
+    .map-box-container {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #e0e0e0;
+    }
+
+    /* 多層次響應式 */
+    @media (max-width: 768px) {
+      :root {
+        --spacing-lg: 25px;
+      }
+      h1 { font-size: 1.8rem; }
+      
+      /* 在平板尺寸微調圖片比例 */
+      .wrap-img-right, .wrap-img-left {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-section { 
+        height: 220px; 
+      }
+      .content-section { 
+        padding: 15px; 
+      }
+      /* 手機版取消文繞圖，改為單欄滿版排列 */
+      .wrap-img-right, .wrap-img-left {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="hero-section"></div>
+
+  <div class="content-section">
+    <h1>The Tranquil Flow of Artisan Time</h1>
+    <div class="divider"></div>
+    
+    <div class="magazine-article">
+      <img src="松園別館-台灣禮品店-1.jpg" alt="Wooden Door of Pine Garden" class="wrap-img-right">
+      <p>Stepping into the bright exhibition hall, the grid-like terrazzo floor tiles carry the weight of time. The gaze extends along the warm yellow halos of the track lights. On the pure white display shelves, pieces of local crafts silently reveal the craftsmen's dedication. The color-glazed gourd vase standing at the front shines with a warm and full luster of age under the refraction of light.</p>
+      
+      <p>Looking back at the edge of the space, outside the half-closed old wooden door, there is a mottled play of light and shadow woven by the afternoon sun and climbing vines. The unrestrained ink marks on the red paper spring couplets and the English letters on the lintel form a subtle intergenerational dialogue in the breeze, gently introducing the natural atmosphere of the outdoors into the interior.</p>
+
+      <img src="松園別館-台灣禮品店-6.JPEG" alt="Crafts at Taiwan Gift Shop" class="wrap-img-left">
+      <p>Looking closely, every detail hides a narrative belonging to this land. The blue-and-white birds and fawns on the white porcelain leaf plates seem ready to spring to life, as if the breath of the forest has been branded onto the glaze. The hand-fired glass bead strings condense vibrant colors within their clarity. The mugs with scattered text stand in rows, silently telling stories of local culture. These objects are not merely static vessels; wrapped within historical architecture, they settle into a tangible presentation of a unique aesthetic.</p>
+    </div>
+
+    <div class="jp-studio-info">
+      <strong>Photography Notes</strong><br>
+      This set of images was captured by the JP Image Studio team from an observer's perspective, all processed to 4K high-definition standards, striving to restore the most authentic, warm lighting, shadows, and detailed layers of the scene. The intertwining of Pine Garden's historical depth and local crafts is not just a transformation of spatial function, but a profound witness to the dialogue between Hualien's local history and contemporary aesthetics.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

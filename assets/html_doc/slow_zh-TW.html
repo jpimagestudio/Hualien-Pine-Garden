@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣禮品館（慢慢生活） - 松園別館｜JP Image Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* 核心樣式與變數 [cite: 2026-03-14] */
+    :root {
+      --pine-green: #2d4635; 
+      --wood-brown: #8d775f; 
+      --soft-white: #fdfcf8; 
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #f4f1ea;
+      margin: 0;
+      padding: 20px 10px;
+      font-family: 'Noto Sans TC', sans-serif;
+      color: #333;
+    }
+
+    /* 時空明信片容器 */
+    .postcard-container {
+      width: 95%; 
+      max-width: 850px; 
+      margin: 10px auto; 
+      background: var(--soft-white);
+      border-radius: 12px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+      overflow: hidden;
+    }
+
+    /* 頂部主視覺 */
+    .hero-section {
+      width: 100%;
+      height: 450px;
+      background-image: url('松園別館-慢慢生活館-2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 內容區塊 */
+    .content-section { 
+      padding: var(--spacing-lg); 
+    }
+
+    /* 標題與分隔線 */
+    h1 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 2.2rem;
+      color: var(--pine-green);
+      margin: 0 0 15px 0;
+      letter-spacing: 0.05em;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: var(--accent-gold);
+      margin: 0 0 30px 0;
+    }
+
+    /* 雜誌排版：文繞圖設定 */
+    .magazine-article {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #4a4a4a;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+
+    .magazine-article::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .wrap-img-right {
+      float: right;
+      width: 45%;
+      max-width: 340px;
+      margin: 5px 0 20px 25px;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .wrap-img-left {
+      float: left;
+      width: 50%;
+      max-width: 360px;
+      margin: 15px 25px 20px 0;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    /* 景點資訊框樣式 (攝影札記) */
+    .jp-studio-info { 
+      background: #f9f7f2; 
+      padding: 20px 25px; 
+      border-radius: 8px; 
+      border-left: 4px solid var(--accent-gold); 
+      margin-bottom: 30px; 
+      font-size: 0.95rem; 
+      line-height: 1.8; 
+      color: #555;
+      clear: both;
+    }
+
+    .jp-studio-info strong {
+      color: var(--wood-brown);
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    /* 地圖容器 */
+    .map-box-container {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #e0e0e0;
+    }
+
+    /* 多層次響應式 [cite: 2026-03-14] */
+    @media (max-width: 768px) {
+      :root {
+        --spacing-lg: 25px;
+      }
+      h1 { font-size: 1.8rem; }
+      
+      .wrap-img-right, .wrap-img-left {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-section { 
+        height: 220px; 
+      }
+      .content-section { 
+        padding: 15px; 
+      }
+      .wrap-img-right, .wrap-img-left {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="hero-section"></div>
+
+  <div class="content-section">
+    <h1>綠意蔓延的文化微光</h1>
+    <div class="divider"></div>
+    
+    <div class="magazine-article">
+      <img src="松園別館-慢慢生活館-4.jpg" alt="台味生活文創商品" class="wrap-img-right">
+      <p>慢慢生活館，是一座專為花蓮在地藝術家打造的創作與銷售平台。 我們致力於扶持在地工藝師、設計師及文創從業者的跨界整合。 在這裡，您可以看見從編織、手工、木工到金工等多元領域的藝術結晶， 每一件作品都承載著花蓮土地的溫度與職人的堅持。</p>
+      
+      <p>在色彩斑斕的陳設區，「台味生活」的微縮袖珍磁鐵與各式小物緊緊抓住目光。那些將台灣街景、復古店招與日常記憶濃縮於方寸之間的設計，在投射燈的溫柔暈染下，宛如一場微型的時光展演。</p>
+
+      <img src="慢慢生活館-8.JPEG" alt="原住民服飾磁鐵與木作吊飾" class="wrap-img-left">
+      <p>深入空間的一隅，掛著身穿原住民傳統服飾的童趣磁鐵，鮮豔的圖騰與細緻的色彩，無聲地呼應著東台灣特有的多元文化脈動。一旁溫潤的木作祈福吊飾與達摩造型鑰匙圈，則將厚重的文化底蘊轉化為輕盈的日常陪伴。在這個充滿巧思的選物空間裡，每一件器物都像是在輕聲提醒旅人：放慢腳步，細細品味時間流轉的痕跡。</p>
+    </div>
+
+    <div class="jp-studio-info">
+      <strong>攝影札記</strong><br>
+      本組影像由 JP Image Studio 團隊以在地觀察者的視角捕捉，全數經 4K 高畫質標準處理，保留了木質紋理與釉面色彩的真實層次。松園別館的建築體見證了時代的更迭，而這些融合在地元素與當代設計的禮品空間，則為厚重的歷史場域注入了鮮活的生活美學 。
+    </div>
+
+  
+  </div>
+</div>
+
+
+
+</body>
+</html>

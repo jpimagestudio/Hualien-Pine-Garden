@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>松園カフェ：歴史と味覚の交わり</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pine-green: #2d4635;
+      --wood-brown: #8d775f;
+      --soft-white: #fdfcf8;
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body { background-color: #f4f1ea; margin: 0; padding: 10px; font-family: 'Noto Sans JP', sans-serif; }
+    
+    .info-box-container, .postcard-container {
+      width: 95%;
+      max-width: 850px;
+      margin: 10px auto;
+      background: var(--soft-white);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+
+    .hero-section {
+      position: relative;
+      height: 380px;
+      overflow: hidden;
+    }
+
+    .hero-image { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+
+    .arch-icon {
+      position: absolute; top: 20px; right: 20px;
+      background: var(--soft-white); padding: 10px; border-radius: 50%;
+      width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .content-section { padding: var(--spacing-lg); }
+    
+    h1 { font-family: 'Noto Serif JP', serif; color: var(--pine-green); font-size: 2.5rem; margin: 0 0 10px 0; }
+    
+    .description { line-height: 2; text-align: justify; margin-bottom: 30px; color: #444; font-size: 1.05rem; }
+    
+    .info-box {
+      background: #f9f7f2; padding: 20px; border-radius: 8px;
+      border-left: 4px solid var(--accent-gold); margin-bottom: 30px;
+      font-size: 0.95rem; line-height: 1.8;
+    }
+
+    .benefit-tag {
+      display: inline-block; padding: 4px 12px; background: var(--pine-green);
+      color: #fff; border-radius: 50px; font-size: 0.8rem; margin-right: 8px; margin-bottom: 8px;
+    }
+
+    .map-header {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 15px;
+      color: var(--wood-brown); font-weight: 700; border-top: 1px solid #eee; padding-top: 25px;
+    }
+
+    .map-section { height: 280px; border-radius: 10px; overflow: hidden; border: 1px solid #ddd; }
+
+    /* --- 多層次響應式優化 --- */
+    @media (max-width: 768px) {
+      :root { --spacing-lg: 25px; }
+    }
+
+    @media (max-width: 600px) {
+      .hero-section { height: 250px; }
+      h1 { font-size: 1.8rem; }
+      .description { font-size: 1rem; line-height: 1.8; }
+      .map-section { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="hero-section">
+    <img src="IMG_6825.jpeg" class="hero-image" alt="松園カフェの特製ドリンク">
+    <div class="arch-icon">
+      <svg width="35" height="35" viewBox="0 0 24 24" fill="var(--pine-green)">
+        <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4v-2z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h1>松園カフェ</h1>
+    
+    <div class="description">
+      <strong>松園カフェ</strong>は元々通路式の建物で、昭和<strong>17</strong>年から<strong>18</strong>年にかけて建設され、かつては日本軍の雑役兵の宿舎でした。<br><br>
+      現在は<strong>松園ハーブダイニング</strong>へと生まれ変わり、歴史的遺跡と現代の感覚を融合させています。様々なハーブを食事や飲み物に取り入れ、ユニークな新鮮な松葉ジュースや松葉コーヒーを提供しています。この体験により、旅行者は松園の百年の美しさを視覚で楽しむだけでなく、味覚を通じてもこの独特でくつろいだ時間を深く楽しむことができます。
+    </div>
+
+    <div class="info-box">
+      <span class="benefit-tag">森のビタミン</span>
+      <span class="benefit-tag">五葉松限定</span><br>
+      🕒 営業時間：毎日 <strong>09:00 - 18:00</strong><br>
+      📞 電話番号：<a href="tel:038356510" style="color:var(--wood-brown); text-decoration:none; font-weight:bold;">03-8356510</a>
+    </div>
+
+    <span class="quality-badge" style="display: block; margin-top: 25px; font-size: 0.8rem; color: #999; text-align: center;">
+        🔍 バーチャルツアーのコンテンツは爵攝數位影像工作室（JP Image Studio）が制作しました
+    </span>
+  </div>
+</div>
+
+</body>
+</html>

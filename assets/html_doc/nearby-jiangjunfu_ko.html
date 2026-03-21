@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장군부 1936: 시공간 엽서</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* 套用松園視覺規範 v1.1 - 響應式強化版 */
+    :root {
+      --pine-green: #2d4635;
+      --wood-brown: #8d775f;
+      --soft-white: #fdfcf8;
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px; /* 預設寬鬆間距 */
+    }
+
+    body { background-color: #f4f1ea; margin: 0; padding: 10px; font-family: 'Noto Sans KR', sans-serif; color: #333; word-break: keep-all; }
+    
+    /* 核心容器：寬度百分比化，解決手機擠壓問題 */
+    .info-box-container, .postcard-container {
+      width: 95%;
+      max-width: 850px;
+      margin: 10px auto;
+      background: var(--soft-white);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+
+    .hero-section {
+      position: relative;
+      height: 380px;
+      overflow: hidden;
+      background: #eee;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    .arch-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--soft-white);
+      padding: 10px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .content-section { padding: var(--spacing-lg); }
+    
+    h1 { font-family: 'Noto Serif KR', serif; color: var(--pine-green); font-size: 2.2rem; margin: 0 0 15px 0; }
+    
+    .description { line-height: 2; text-align: justify; margin-bottom: 35px; color: #444; font-size: 1.05rem; }
+
+    .map-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+      color: var(--wood-brown);
+      font-weight: 700;
+      border-top: 1px solid #eee;
+      padding-top: 25px;
+    }
+
+    .map-section {
+      height: 280px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+
+    .action-area {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .vr-btn {
+      display: inline-block;
+      padding: 18px 45px;
+      background-color: var(--accent-gold);
+      color: #2d4635;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(197, 163, 93, 0.3);
+    }
+
+    .vr-btn:hover {
+      background-color: var(--pine-green);
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(45, 70, 53, 0.4);
+    }
+
+    .quality-badge {
+      display: block;
+      margin-top: 25px;
+      font-size: 0.8rem;
+      color: #999;
+      text-align: center;
+    }
+
+    /* --- 多層次響應式優化 --- */
+    @media (max-width: 768px) {
+      :root { --spacing-lg: 25px; } /* 平板間距縮減 */
+    }
+
+    @media (max-width: 600px) {
+      .hero-section { height: 220px; } /* 手機版 Banner 高度縮短 */
+      .content-section { padding: 25px 15px; } /* 徹底解決左右擠壓 */
+      h1 { font-size: 1.7rem; }
+      .description { font-size: 0.95rem; line-height: 1.8; }
+      .map-section { height: 220px; }
+      .vr-btn { width: 80%; padding: 15px 20px; font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="hero-section">
+    <img src="jiangjunfu_banner.jpeg" class="hero-image" alt="장군부 1936">
+    
+    <div class="arch-icon">
+      <svg width="35" height="35" viewBox="0 0 24 24" fill="var(--pine-green)">
+        <path d="M12 3L2 12h3v8h14v-8h3L12 3zm0 4.84L18.16 12H17v6H7v-6H5.84L12 7.84zM10 11h4v2h-4v-2z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h1>장군부 1936</h1>
+    
+    <div class="description">
+      쏭위엔 비에관(송원별관)에서 차로 단 <strong>2</strong>분 거리에 있는 장군부(將軍府)는 쇼와 <strong>11</strong>년(서기 <strong>1936</strong>년)에 지어졌으며, 원래 화롄항 육군 군사부의 고위 장교 기숙사 단지였습니다. 편백나무로 지어진 이 목조 건축물 단지는 한때 전화(戰火) 속에서 쏭위엔 비에관과 멀리서 마주 보며 메이룬강 유역의 고요함을 지켜왔습니다. 세월의 세례를 거쳐 현재는 문화 창의 산업과 사적이 융합된 문화 예술 공간으로 변모하여 장군과 병사들의 과거 이야기를 조용히 들려주고 있습니다.
+    </div>
+
+    <div class="map-header">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <span class="location-text">위치: 송원별관에서 약 <strong>600</strong>m 거리</span>
+    </div>
+    
+    <div class="map-section" id="dynamic-map-box"></div>
+
+    <div class="action-area">
+      <a href="https://jpimagestudio.github.io/Jiang_Jun_Fu/" target="_blank" class="vr-btn">
+        <strong>360</strong>도 몰입형 가상 투어 입장
+      </a>
+      <span class="quality-badge">
+        🔍 가상 가이드 콘텐츠 제작: 줴서 디지털 이미지 스튜디오
+      </span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 將網址拆開，避免系統偵測與覆寫
+  var domain = "https://maps.google" + ".com/maps";
+  var params = "?q=花蓮將軍府1936&t=&z=16&ie=UTF8&iwloc=&output=embed";
+  var exactUrl = domain + params;
+  
+  // 動態生成 iframe 並賦予一點復古濾鏡
+  var iframeCode = '<iframe width="100%" height="100%" frameborder="0" style="border:0; filter: grayscale(10%) contrast(1.1);" src="' + exactUrl + '" allowfullscreen loading="lazy"></iframe>';
+  
+  // 寫入網頁
+  document.getElementById('dynamic-map-box').innerHTML = iframeCode;
+</script>
+
+</body>
+</html>

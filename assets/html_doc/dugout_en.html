@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pine Garden: Time-Space Narrative of the Underground Bunker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pine-green: #2d4635;
+      --wood-brown: #8d775f;
+      --soft-white: #fdfcf8;
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      margin: 0;
+      padding: 10px;
+      font-family: 'Noto Sans TC', sans-serif;
+      color: #ccc;
+    }
+
+    /* 核心容器：抗擠壓響應式設計 */
+    .info-box-container, .postcard-container {
+      width: 95%;
+      max-width: 850px;
+      margin: 10px auto;
+      background: #262626;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .header-box {
+      border-left: 5px solid var(--accent-gold);
+      padding-left: 20px;
+      margin: 40px 0;
+    }
+
+    h1 {
+      font-family: 'Noto Serif TC', serif;
+      color: var(--soft-white);
+      font-size: 2.2rem;
+      margin: 0 0 15px 0;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content-section { padding: var(--spacing-lg); }
+    
+    .description { line-height: 2; text-align: justify; margin-bottom: 35px; color: #bbb; font-size: 1.05rem; }
+
+    /* 卡片式排版 */
+    .archive-card {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 40px;
+    }
+
+    .archive-card:last-child { border-bottom: none; }
+
+    .card-label {
+      font-size: 0.8rem; color: var(--accent-gold);
+      letter-spacing: 3px; margin-bottom: 15px; display: block;
+    }
+
+    .card-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.6rem; color: var(--soft-white); margin-bottom: 20px;
+    }
+
+    /* 響應式調整：徹底解決手機版左右擠壓 */
+    @media (max-width: 768px) {
+      :root { --spacing-lg: 25px; }
+    }
+
+    @media (max-width: 600px) {
+      .header-box { margin: 25px 0; }
+      .hero-section { height: 220px; }
+      .content-section { padding: 25px 15px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="content-section" style="padding-bottom: 0;">
+    <div class="header-box">
+      <h1>Time-Space Bunker: A Documentary of the Underground Shelter</h1>
+      <p style="margin-top:15px; line-height: 1.8; color: #bbb;">
+        This underground air raid shelter was built between <strong>1942 and 1943</strong>. It is the darkest and heaviest wartime witness in the history of Pine Garden.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6761.jpeg" class="hero-image" alt="Bunker Entrance">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">Step 1</span>
+    <div class="card-title">Bunker Entrance</div>
+    <div class="description">
+      Solid terrazzo steps extend downwards. This was the core refuge and command space for high-ranking military officials when facing severe bombings by the US military.
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_1465.jpeg" class="hero-image" alt="Observation Tunnel">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">Step 2</span>
+    <div class="card-title">Inside the Observation Tunnel</div>
+    <div class="description">
+      The interior preserves mottled brick walls and the remains of blast-proof iron doors up to <strong>four centimeters</strong> thick. A heavy wartime atmosphere condenses in the air.
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6773.jpeg" class="hero-image" alt="Kamikaze Documentary">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">Step 3</span>
+    <div class="card-title">Taiwan Kamikaze Documentary: The Tragic Farewell of the White Butterflies</div>
+    <div class="description">
+      In Taiwan during the late stages of the Pacific War, special attack members were called "White Butterflies". This documentary record begins on January <strong>15</strong>, <strong>1944</strong>, and lasts until June <strong>7</strong>, <strong>1945</strong>, with a total of <strong>3461</strong> sorties dispatched across Taiwan.
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6768.jpeg" class="hero-image" alt="Signboard">
+  </div>
+  <div class="content-section">
+    <span class="card-label">Step 4</span>
+    <div class="card-title">The Birth of the Kamikaze Special Attack Unit</div>
+    <div class="description">
+      In <strong>1944</strong>, after Japan's defeat in the Battle of Midway, Lieutenant General Takijiro Onishi proposed the crazy concept of "one plane for one ship".
+    </div>
+    
+     <span class="quality-badge" style="display: block; margin-top: 30px; font-size: 0.8rem; color: #999; text-align: center;">
+        🔍 Virtual tour content created by JP Image Studio
+      </span>
+  </div>
+</div>
+
+</body>
+</html>

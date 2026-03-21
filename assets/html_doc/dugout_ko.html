@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쏭위엔 비에관(송원별관): 지하 벙커 시공간 서사</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pine-green: #2d4635;
+      --wood-brown: #8d775f;
+      --soft-white: #fdfcf8;
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      margin: 0;
+      padding: 10px;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #ccc;
+    }
+
+    /* 核心容器：抗擠壓響應式設計 */
+    .info-box-container, .postcard-container {
+      width: 95%;
+      max-width: 850px;
+      margin: 10px auto;
+      background: #262626;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .header-box {
+      border-left: 5px solid var(--accent-gold);
+      padding-left: 20px;
+      margin: 40px 0;
+    }
+
+    h1 {
+      font-family: 'Noto Serif KR', serif;
+      color: var(--soft-white);
+      font-size: 2.2rem;
+      margin: 0 0 15px 0;
+      word-break: keep-all;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content-section { padding: var(--spacing-lg); }
+    
+    .description { line-height: 2; text-align: justify; margin-bottom: 35px; color: #bbb; font-size: 1.05rem; word-break: keep-all; }
+
+    /* 卡片式排版 */
+    .archive-card {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 40px;
+    }
+
+    .archive-card:last-child { border-bottom: none; }
+
+    .card-label {
+      font-size: 0.8rem; color: var(--accent-gold);
+      letter-spacing: 3px; margin-bottom: 15px; display: block;
+    }
+
+    .card-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.6rem; color: var(--soft-white); margin-bottom: 20px;
+    }
+
+    /* 響應式調整：徹底解決手機版左右擠壓 */
+    @media (max-width: 768px) {
+      :root { --spacing-lg: 25px; }
+    }
+
+    @media (max-width: 600px) {
+      .header-box { margin: 25px 0; }
+      .hero-section { height: 220px; }
+      .content-section { padding: 25px 15px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="content-section" style="padding-bottom: 0;">
+    <div class="header-box">
+      <h1>시공간 벙커: 지하 대피소 기록</h1>
+      <p style="margin-top:15px; line-height: 1.8; color: #bbb;">
+        이 지하 방공호는 <strong>1942년에서 1943년</strong> 사이에 건설되었습니다. 송원별관의 역사상 가장 어둡고 무거운 전시의 증거입니다.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6761.jpeg" class="hero-image" alt="벙커 입구">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">1단계</span>
+    <div class="card-title">벙커 입구</div>
+    <div class="description">
+      두꺼운 테라조 계단이 아래로 이어집니다. 이곳은 미군의 격렬한 폭격에 직면했을 때 당시 군 고위층의 핵심적인 대피 및 지휘 공간이었습니다.
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_1465.jpeg" class="hero-image" alt="관측 터널">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">2단계</span>
+    <div class="card-title">관측 터널 내부</div>
+    <div class="description">
+      내부에는 얼룩진 벽돌 벽과 두께 <strong>4cm</strong>에 달하는 방폭 철문의 흔적이 남아 있습니다. 공기 중에는 무거운 전시 분위기가 응결되어 있습니다.
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6773.jpeg" class="hero-image" alt="카미카제 기록">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">3단계</span>
+    <div class="card-title">대만 카미카제 기록: 하얀 나비의 비장한 이별</div>
+    <div class="description">
+      태평양 전쟁 말기 대만에서는 특공대원들을 "하얀 나비"라고 불렀습니다. 이 기록은 <strong>1944</strong>년 <strong>1</strong>월 <strong>15</strong>일에 시작되어 <strong>1945</strong>년 <strong>6</strong>월 <strong>7</strong>일까지 이어졌으며, 대만 전역에서 무려 <strong>3461</strong>대의 출격이 있었습니다.
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6768.jpeg" class="hero-image" alt="간판">
+  </div>
+  <div class="content-section">
+    <span class="card-label">4단계</span>
+    <div class="card-title">카미카제 특공대의 탄생</div>
+    <div class="description">
+      서기 <strong>1944</strong>년, 일본이 미드웨이 해전에서 패배한 후 오니시 다키지로 중장은 "항공기 한 대와 군함 한 척을 맞바꾼다"는 미친 구상을 제안했습니다.
+    </div>
+    
+     <span class="quality-badge" style="display: block; margin-top: 30px; font-size: 0.8rem; color: #999; text-align: center;">
+        🔍 가상 가이드 콘텐츠 제작: 줴서 디지털 이미지 스튜디오
+      </span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>松園別館：地下壕の時空の物語</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pine-green: #2d4635;
+      --wood-brown: #8d775f;
+      --soft-white: #fdfcf8;
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      margin: 0;
+      padding: 10px;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #ccc;
+    }
+
+    /* 核心容器：抗擠壓響應式設計 */
+    .info-box-container, .postcard-container {
+      width: 95%;
+      max-width: 850px;
+      margin: 10px auto;
+      background: #262626;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .header-box {
+      border-left: 5px solid var(--accent-gold);
+      padding-left: 20px;
+      margin: 40px 0;
+    }
+
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      color: var(--soft-white);
+      font-size: 2.2rem;
+      margin: 0 0 15px 0;
+    }
+
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content-section { padding: var(--spacing-lg); }
+    
+    .description { line-height: 2; text-align: justify; margin-bottom: 35px; color: #bbb; font-size: 1.05rem; }
+
+    /* 卡片式排版 */
+    .archive-card {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 40px;
+    }
+
+    .archive-card:last-child { border-bottom: none; }
+
+    .card-label {
+      font-size: 0.8rem; color: var(--accent-gold);
+      letter-spacing: 3px; margin-bottom: 15px; display: block;
+    }
+
+    .card-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.6rem; color: var(--soft-white); margin-bottom: 20px;
+    }
+
+    /* 響應式調整：徹底解決手機版左右擠壓 */
+    @media (max-width: 768px) {
+      :root { --spacing-lg: 25px; }
+    }
+
+    @media (max-width: 600px) {
+      .header-box { margin: 25px 0; }
+      .hero-section { height: 220px; }
+      .content-section { padding: 25px 15px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="content-section" style="padding-bottom: 0;">
+    <div class="header-box">
+      <h1>時空の防空壕：地下避難所の記録</h1>
+      <p style="margin-top:15px; line-height: 1.8; color: #bbb;">
+        この地下防空壕は<strong>1942年から1943年</strong>にかけて建設されました。松園別館の歴史の中で最も暗く、最も重々しい戦時の証人です。
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6761.jpeg" class="hero-image" alt="地下壕の入り口">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">ステップ 1</span>
+    <div class="card-title">地下壕の入り口</div>
+    <div class="description">
+      重厚な人造石の階段が下へと続いています。ここは、アメリカ軍の激しい爆撃に直面した際、当時の軍上層部のための最も中核的な避難および指揮空間でした。
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_1465.jpeg" class="hero-image" alt="観測トンネル">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">ステップ 2</span>
+    <div class="card-title">観測トンネル内部</div>
+    <div class="description">
+      内部には、まだらなレンガの壁や厚さ<strong>4センチメートル</strong>にもなる防爆鉄の扉の跡が残っています。空気中には重々しい戦時の雰囲気が漂っています。
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6773.jpeg" class="hero-image" alt="特攻隊の記録">
+  </div>
+  <div class="content-section archive-card">
+    <span class="card-label">ステップ 3</span>
+    <div class="card-title">台湾特攻隊の記録：白い蝶の悲壮な別れ</div>
+    <div class="description">
+      太平洋戦争末期の台湾では、特攻隊員は「白い蝶」と呼ばれていました。この記録は<strong>1944</strong>年<strong>1</strong>月<strong>15</strong>日に始まり、<strong>1945</strong>年<strong>6</strong>月<strong>7</strong>日まで続き、台湾全土で<strong>3461</strong>機が出撃しました。
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <img src="IMG_6768.jpeg" class="hero-image" alt="看板">
+  </div>
+  <div class="content-section">
+    <span class="card-label">ステップ 4</span>
+    <div class="card-title">神風特攻隊の誕生</div>
+    <div class="description">
+      西暦<strong>1944</strong>年、日本がミッドウェー海戦で敗北した後、大西瀧治郎中将は「一機で一艦と交換する」という狂気的な構想を提案しました。
+    </div>
+    
+     <span class="quality-badge" style="display: block; margin-top: 30px; font-size: 0.8rem; color: #999; text-align: center;">
+        🔍 バーチャルツアーのコンテンツは爵攝數位影像工作室（JP Image Studio）が制作しました
+      </span>
+  </div>
+</div>
+
+</body>
+</html>

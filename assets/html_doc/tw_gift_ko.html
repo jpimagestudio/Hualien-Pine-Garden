@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대만 기념품점 - 쏭위엔 비에관(송원별관)｜JP Image Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* 核心樣式與變數 */
+    :root {
+      --pine-green: #2d4635; 
+      --wood-brown: #8d775f; 
+      --soft-white: #fdfcf8; 
+      --accent-gold: #c5a35d;
+      --spacing-lg: 45px;
+    }
+
+    body {
+      background-color: #f4f1ea;
+      margin: 0;
+      padding: 20px 10px;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #333;
+      word-break: keep-all;
+    }
+
+    /* 時空明信片容器 */
+    .postcard-container {
+      width: 95%; 
+      max-width: 850px; 
+      margin: 10px auto; 
+      background: var(--soft-white);
+      border-radius: 12px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+      overflow: hidden;
+    }
+
+    /* 頂部主視覺 (改用台灣禮品店-2.jpg) */
+    .hero-section {
+      width: 100%;
+      height: 450px;
+      background-image: url('松園別館-台灣禮品店-2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 內容區塊 */
+    .content-section { 
+      padding: var(--spacing-lg); 
+    }
+
+    /* 標題與分隔線 */
+    h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 2.2rem;
+      color: var(--pine-green);
+      margin: 0 0 15px 0;
+      letter-spacing: 0.05em;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: var(--accent-gold);
+      margin: 0 0 30px 0;
+    }
+
+    /* 雜誌排版：文繞圖設定 */
+    .magazine-article {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #4a4a4a;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+
+    /* 清除浮 통 */
+    .magazine-article::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .wrap-img-right {
+      float: right;
+      width: 45%;
+      max-width: 320px;
+      margin: 5px 0 20px 25px;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .wrap-img-left {
+      float: left;
+      width: 55%;
+      max-width: 380px;
+      margin: 15px 25px 20px 0;
+      border-radius: 8px;
+      box-shadow: 2px 5px 15px rgba(0,0,0,0.08);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    /* 景點資訊框樣式 (攝影札記) */
+    .jp-studio-info { 
+      background: #f9f7f2; 
+      padding: 20px 25px; 
+      border-radius: 8px; 
+      border-left: 4px solid var(--accent-gold); 
+      margin-bottom: 30px; 
+      font-size: 0.95rem; 
+      line-height: 1.8; 
+      color: #555;
+      clear: both; /* 確保不受上方浮動圖片影響 */
+    }
+
+    .jp-studio-info strong {
+      color: var(--wood-brown);
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    /* 地圖容器 */
+    .map-box-container {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #e0e0e0;
+    }
+
+    /* 多層次響應式 */
+    @media (max-width: 768px) {
+      :root {
+        --spacing-lg: 25px;
+      }
+      h1 { font-size: 1.8rem; }
+      
+      /* 在平板尺寸微調圖片比例 */
+      .wrap-img-right, .wrap-img-left {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-section { 
+        height: 220px; 
+      }
+      .content-section { 
+        padding: 15px; 
+      }
+      /* 手機版取消文繞圖，改為單欄滿版排列 */
+      .wrap-img-right, .wrap-img-left {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="postcard-container">
+  <div class="hero-section"></div>
+
+  <div class="content-section">
+    <h1>조용히 흐르는 장인의 시간</h1>
+    <div class="divider"></div>
+    
+    <div class="magazine-article">
+      <img src="松園別館-台灣禮品店-1.jpg" alt="송원별관 나무 문" class="wrap-img-right">
+      <p>밝은 전시실에 들어서면 격자 모양의 테라조 바닥 타일이 세월의 무게를 견디고 있습니다. 시선은 레일 조명의 따뜻한 노란색 후광을 따라 이어집니다. 순백의 진열장 위에는 현지 공예품들이 장인의 노고를 조용히 드러내고 있습니다. 앞에 서 있는 채색 유약 표주박 병은 빛의 굴절을 받아 따뜻하고 풍부한 세월의 윤기를 발산합니다.</p>
+      
+      <p>공간의 가장자리를 돌아보면, 반쯤 열린 오래된 나무 문밖으로 오후의 석양과 덩굴이 얽혀 만든 얼룩진 빛과 그림자가 보입니다. 빨간 춘련(春聯)에 쓰인 거침없는 붓자국과 상인방의 영문 글자가 미풍 속에서 세대를 뛰어넘는 미묘한 대화를 형성하며 야외의 자연스러운 숨결을 부드럽게 실내로 끌어들입니다.</p>
+
+      <img src="松園別館-台灣禮品店-6.JPEG" alt="대만 기념품점 공예품" class="wrap-img-left">
+      <p>가까이 다가가 자세히 보면, 모든 세부 사항에 이 땅에 속한 이야기가 숨겨져 있습니다. 백자 나뭇잎 접시 위의 청화 새와 새끼 사슴은 마치 숲의 숨결을 유약 위에 각인시킨 듯 금방이라도 튀어나올 것 같습니다. 손으로 구워낸 유리구슬 팔찌는 투명함 속에 선명한 색채를 응축하고 있습니다. 글자가 흩어져 있는 머그잔들이 줄지어 서서 현지 문화의 이야기를 무언으로 들려줍니다. 이 물건들은 단순한 정적인 그릇이 아니라, 역사적 건축물에 감싸여 독특한 미학의 구체화된 표현으로 가라앉습니다.</p>
+    </div>
+
+    <div class="jp-studio-info">
+      <strong>촬영 노트</strong><br>
+      이 이미지 세트는 JP Image Studio 팀이 관찰자의 시선으로 촬영했으며, 현장의 가장 사실적이고 따뜻한 빛과 그림자, 그리고 디테일의 층을 복원하기 위해 모두 4K 고화질 표준으로 처리되었습니다. 쏭위엔 비에관의 역사적 깊이와 현지 공예품의 교차는 단순한 공간 기능의 전환이 아니라, 화롄의 지역 역사와 현대 미학 간의 대화를 보여주는 심오한 증거입니다.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
